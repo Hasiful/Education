@@ -79,3 +79,28 @@ $(function (e) {
 $('.video_popup').magnificPopup({
   type: 'iframe'
 });
+
+// active nav
+
+const toggleNav = document.getElementById("toggle_nav");
+
+// Function to remove classes from elements
+function removeClasses() {
+  toggleNav.classList.remove("activeToggle");
+}
+
+// Add event listener to window
+window.addEventListener("click", function(event) {
+  // Check if click occurred outside of navWrapper and toggleNav
+  if (!navWrapper.contains(event.target) && !toggleNav.contains(event.target)) {
+    removeClasses();
+  }
+});
+
+// Add event listener to toggleNav
+toggleNav.addEventListener("click", function(event) {
+  // Prevent event from bubbling up to window
+  event.stopPropagation();
+  // Toggle classes on elements
+  toggleNav.classList.toggle("activeToggle");
+});

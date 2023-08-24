@@ -179,3 +179,71 @@ img{
     content: "\f054";
 }
 
+/* toglle nav */
+
+
+/* toggole btn */
+
+.toggle_nav {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 9;
+}
+
+.toggle_nav {
+    cursor: pointer;
+    display: block;
+    z-index: 9;
+}
+    
+.toggle_nav ul,
+.admin_collopse ul {
+    position: relative;
+    height: 16px;
+    width: 25px;
+}
+
+.toggle_nav ul li,
+.admin_collopse ul li{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--main-color);
+    left: 0px;
+    transition: var(--transition);
+}
+
+.toggle_nav ul li:first-child,
+.admin_collopse ul li:first-child{
+    top: 0px;
+}
+
+.toggle_nav ul li:nth-child(2),
+.admin_collopse ul li:nth-child(2){
+    top: 50%;
+}
+
+.toggle_nav ul li:last-child,
+.admin_collopse ul li:last-child {
+    top: 98%;
+}
+
+.activeToggle ul li:first-child,
+.activeColapse ul li:first-child{
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.activeToggle ul li:nth-child(2),
+.activeColapse ul li:nth-child(2){
+    visibility: hidden;
+    opacity: 0;
+}
+
+.activeToggle ul li:last-child,
+.activeColapse ul li:last-child{
+    top: 50%;
+    transform: rotate(45deg);
+}
+

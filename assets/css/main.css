@@ -206,9 +206,8 @@
 
 .counter_achive {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 2;
+    padding: 40px 0px;
 }
 
 .counter_achive_wrapper{
@@ -225,7 +224,7 @@
     border: 1px solid rgb(109 40 217 / 6%);
     padding: 15px;
     box-shadow: 5px 5px 20px rgba(0,0,0,.06);
-    width: calc(16.6666666667% - 20px);
+    width: calc(50% - 12px);
 }
 
 .counter_achive_icon {
@@ -253,12 +252,11 @@
 }
 
 .principal_image {
-    width: 300px;
-    height: 330px;
+    width: 250px;
+    height: 300px;
     margin: 0px auto;
-    
     border-radius: 12px;
-    transform: rotate(-15deg);
+    transform: rotate(0);
     position: relative;
 }
 
@@ -266,10 +264,10 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    bottom: -42px;
-    left: 50px;
+    bottom: -12px;
+    left: 20px;
     background: var(--main-color);
-    transform: rotate(12deg);
+    transform: rotate(0);
     border: 5px solid var(--global-color);
     border-radius: 12px;
     z-index: -1;
@@ -435,7 +433,7 @@
 .event_slider_item{
     position: relative;
     background: var(--primary-bg);
-    width: calc(25% - 18px);
+    width: 100%;
 }
 
 .event_thumb {
