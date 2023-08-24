@@ -2,12 +2,30 @@
 @media(min-width: 400px){}
 
 /* 576 */ 
-@media(min-width: 576px){}
+@media(min-width: 576px){
+    .gallery_wrapper {
+        gap: 12px;
+    }
+}
 
 /* 768 */
 @media(min-width: 767px){
     .section_padding{
         padding: 40px 0px;
+    }
+
+    .gallary_image {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+
+
+    .gallary_image:nth-child(2),
+    .gallary_image:nth-child(4){
+        grid-row: span 2;
+        display: flex;
+        grid-column: span 1;
     }
 }
 
