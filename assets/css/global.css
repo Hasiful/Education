@@ -145,11 +145,11 @@ img{
 }
 
 
-.slick-prev, 
+.slick-prev,
 .slick-next {
     border: none;
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
     border-radius: 5px;
     color: transparent;
     overflow: hidden;
@@ -170,6 +170,7 @@ img{
     place-content: center;
     background: var(--bg-color);
     border: 1px solid var(--main-color);
+    border-radius: 6px;
 }
 
 .slick-next::after {

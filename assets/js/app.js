@@ -56,6 +56,24 @@ $(function (e) {
   })
 });
 
+// Testimonial slider
+
+$(function (e) {
+  "use strict";
+  e(".testimonial_slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      focusOnSelect: !0,
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 5e3,
+      swipe: true,
+      swipeToSlide: true,
+      appendArrows: e(".arrow_testiminal"),
+  })
+});
+
 // magnific popup
 
 $('.video_popup').magnificPopup({
