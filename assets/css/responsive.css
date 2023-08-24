@@ -10,6 +10,10 @@
     .event_slider_item{
         width: calc(50% - 12px);
     }
+
+    .notice_wrapper {
+        padding: 50px;
+    }
 }
 
 /* 768 */
@@ -68,6 +72,11 @@
 
     .event_slider_item{
         width: calc(25% - 18px);
+    }
+
+    .banner_section {
+        padding-top: 60px;
+        padding-bottom: 150px;
     }
 }
 

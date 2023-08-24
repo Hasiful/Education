@@ -139,7 +139,7 @@
     z-index: 1;
     background: var(--bg-color);
     padding-top: 60px;
-    padding-bottom: 150px;
+    padding-bottom: 60px;
 }
 
 .banner_section::after{
@@ -497,12 +497,6 @@
     grid-column: span 2;
 }
 
-.notice_wrapper {
-    padding: 50px;
-    background: var(--bg-color);
-    border-radius: 12px;
-}
-
 .notice_content {
     max-height: 466px;
     overflow: auto;
@@ -611,9 +605,10 @@
     margin-top: 8px;
 }
 
-.notice_wrapper{
-    padding: 50px;
+.notice_wrapper {
+    padding: 20px;
     background: var(--bg-color);
+    border-radius: 12px;
 }
 
 .notice_thumb {
