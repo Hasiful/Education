@@ -14,6 +14,10 @@
     .notice_wrapper {
         padding: 50px;
     }
+
+    .counter_achive_item {
+        width: calc(50% - 12px);
+    }
 }
 
 /* 768 */

@@ -231,7 +231,22 @@
     border: 1px solid rgb(109 40 217 / 6%);
     padding: 15px;
     box-shadow: 5px 5px 20px rgba(0,0,0,.06);
-    width: calc(50% - 12px);
+    width: 100%;
+}
+
+.counter_achive_content {
+    background: rgb(1 71 155 / 6%);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.counter_achive_item {
+    background: var(--global-color);
+    border-radius: 20px;
+    border: 2px solid var(--main-color);
+    padding: 8px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.06);
+    width: 100%;
 }
 
 .counter_achive_icon {
@@ -454,6 +469,8 @@
 .event_content {
     background: var(--primary-bg);
     padding: 40px 20px 10px 20px;
+    border: 1px solid var(--main-color);
+    border-top: 0;
 }
 
 .event_title a {
@@ -926,4 +943,108 @@
 .video_img img{
     height: 100%;
     border-radius: 12px;
+}
+
+.rules_content {
+    background: var(--primary-bg);
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 15%);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.rules_logo{
+    width: 120px;
+    margin-bottom: 40px;
+}
+
+.rules_title {
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: var(--text-color);
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.rules_title::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 50%;
+    background: var(--main-color);
+}
+
+.rules_block {
+    margin-bottom: 20px;
+}
+
+.rules_block_title {
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.rules_block ul{
+    padding-left: 20px;
+}
+
+.rules_block ul li {
+    list-style: circle;
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.rules_block ul li:not(:last-child){
+    margin-bottom: 6px;
+}
+
+.rules_wrapper {
+    background: linear-gradient(rgb(248 250 252) 20%, transparent 0%);
+}
+
+.teacher_wrpper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.teacher_card{
+    width: calc(20% - 20px);
+    text-align: center;
+    border: 1px solid var(--main-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.teacher_card_img {
+    height: 300px;
+}
+
+.teacher_card_img img{
+    height: 100%;
+}
+
+.teacher_card_content {
+    padding: 10px 20px;
+    background: var(--bg-color);
+}
+
+.teacher_name {
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.teacher_designation {
+    font-size: 15px;
+    color: var(--main-color);
+    font-weight: 600;
 }
