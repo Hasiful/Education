@@ -54,6 +54,18 @@ img{
     object-fit: cover;
 }
 
+.input_control{
+    height: 36px;
+    width: 100%;
+    background: transparent;
+    padding: 0 15px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    font-size: 15px;
+    color: var(--color);
+    border-radius: 6px;
+}
+
 .main_btn{
     border: none;
     background: transparent;
@@ -64,6 +76,18 @@ img{
     font-size: 16px;
     font-weight: 500;
     transition: var(--transition);
+}
+
+textarea.input_control {
+    height: 100px;
+    padding: 10px 15px;
+}
+
+.form_title {
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 9px;
 }
 
 .btn_border{
@@ -103,6 +127,10 @@ img{
 .btn_hover:hover{
     border-color: var(--main-color);
     color: var(--global-color);
+}
+
+.fa-solid, .fas{
+    font-weight: 300;
 }
 
 /* section title */
