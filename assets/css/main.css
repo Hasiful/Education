@@ -822,8 +822,6 @@
     padding-right: 30px;
 }
 
-.mission_list{}
-
 .mission_list ul{
     display: flex;
     align-items: center;
@@ -913,15 +911,19 @@
     text-align: center;
     margin-bottom: 20px;
     color: var(--main-color);
+    font-size: 36px;
+    font-weight: 600;
 }
 
 .video_title span{
     color: var(--text-color);
 }
 
-.video_wrapper{
-    height: 500px;
+.video_wrapper {
+    height: 300px;
+    position: relative;
 }
+
 
 .video_img{
     height: 100%;
@@ -1012,13 +1014,12 @@
     align-items: stretch;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 16px;
 }
 
-.teacher_card{
-    width: calc(20% - 20px);
+.teacher_card {
+    width: 100%;
     text-align: center;
-    border: 1px solid var(--main-color);
     border-radius: 12px;
     overflow: hidden;
 }
@@ -1027,13 +1028,16 @@
     height: 300px;
 }
 
-.teacher_card_img img{
+.teacher_card_img img {
     height: 100%;
+    border-radius: 12px 12px 0px 0px;
+    border: 1px solid var(--main-color);
+    border-bottom: 0;
 }
 
 .teacher_card_content {
     padding: 10px 20px;
-    background: var(--bg-color);
+    background: var(--primary-bg);
 }
 
 .teacher_name {
@@ -1047,4 +1051,23 @@
     font-size: 15px;
     color: var(--main-color);
     font-weight: 600;
+}
+
+.board_result_content{
+    padding: 30px 50px;
+    border-radius: 12px;
+    background: var(--bg-color);
+}
+
+.clone_website {
+    max-width: 100%;
+    width: 100%;
+    margin: 0px auto;
+    height: 570px;
+}
+
+.clone_website iframe{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
 }

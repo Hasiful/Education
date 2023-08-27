@@ -1,5 +1,13 @@
 /* 400 */ 
-@media(min-width: 400px){}
+@media(min-width: 400px){
+    .teacher_card {
+        width: calc(50% - 8px);
+    }
+
+    .teacher_card_img{
+        height: 260px;
+    }
+}
 
 /* 576 */ 
 @media(min-width: 576px){
@@ -18,6 +26,15 @@
     .counter_achive_item {
         width: calc(50% - 12px);
     }
+
+    .video_wrapper {
+        height: 350px;
+    }
+
+    .teacher_card {
+        width: calc(33.33% - 11px);
+    }
+
 }
 
 /* 768 */
@@ -44,6 +61,14 @@
 
     .event_slider_item{
         width: calc(33.33% - 16px);
+    }
+
+    .video_wrapper {
+        height: 450px;
+    }
+
+    .teacher_card {
+        width: calc(25% - 12px);
     }
 }
 
@@ -82,6 +107,14 @@
         padding-top: 60px;
         padding-bottom: 150px;
     }
+
+    .video_wrapper {
+        height: 500px;
+    }
+
+    .teacher_card_img{
+        height: 300px;
+    }
 }
 
 /* 1240 */
@@ -89,4 +122,8 @@
     .section_padding{
         padding: 60px 0px;
     }
+    .teacher_card {
+        width: calc(20% - 13px);
+    }
+   
 }
