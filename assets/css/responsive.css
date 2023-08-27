@@ -35,6 +35,10 @@
         width: calc(33.33% - 11px);
     }
 
+    .video_content {
+        padding: 20px;
+    }
+
 }
 
 /* 768 */
@@ -70,6 +74,15 @@
     .teacher_card {
         width: calc(25% - 12px);
     }
+
+    .video_content {
+        padding: 30px;
+    }
+
+    .board_result_content{
+        padding: 20px 30px;
+    }
+    
 }
 
 /* 1024 */
@@ -114,6 +127,15 @@
 
     .teacher_card_img{
         height: 300px;
+    }
+
+    .video_content {
+        padding: 50px;
+    }
+
+    
+    .board_result_content{
+        padding: 30px 50px;
     }
 }
 

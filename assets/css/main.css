@@ -903,7 +903,7 @@
 
 .video_content {
     background: linear-gradient(to right, rgb(1 71 155 / 10%) 70%, var(--main-color) 30%);
-    padding: 50px;
+    padding: 10px;
     border-radius: 12px;
 }
 
@@ -1054,7 +1054,7 @@
 }
 
 .board_result_content{
-    padding: 30px 50px;
+    padding: 10px;
     border-radius: 12px;
     background: var(--bg-color);
 }
@@ -1070,4 +1070,13 @@
     height: 100%;
     width: 100%;
     border-radius: 12px;
+}
+
+.reult_view{
+    position: relative;
+}
+
+.reult_view embed{
+    max-height: 600px;
+    min-height: 600px;
 }
