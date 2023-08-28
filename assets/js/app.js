@@ -80,27 +80,23 @@ $('.video_popup').magnificPopup({
   type: 'iframe'
 });
 
-// active nav
 
-const toggleNav = document.getElementById("toggle_nav");
 
-// Function to remove classes from elements
-function removeClasses() {
-  toggleNav.classList.remove("activeToggle");
+// object select element
+const selectElement = {
+  dropdownBtn: document.getElementsByClassName("dropdown_button"),
+  subNavItem: document.getElementsByClassName("dropdown_sub"),
 }
 
-// Add event listener to window
-window.addEventListener("click", function(event) {
-  // Check if click occurred outside of navWrapper and toggleNav
-  if (!navWrapper.contains(event.target) && !toggleNav.contains(event.target)) {
-    removeClasses();
-  }
-});
+// element destructure
+let {dropdownBtn, subNavItem} = selectElement
 
-// Add event listener to toggleNav
-toggleNav.addEventListener("click", function(event) {
-  // Prevent event from bubbling up to window
-  event.stopPropagation();
-  // Toggle classes on elements
-  toggleNav.classList.toggle("activeToggle");
+;[...dropdownBtn].forEach((innerBtn, index) => {
+  let innerNav = subNavItem[index];
+  innerBtn.addEventListener("click", function() {
+    $(innerNav).slideToggle();
+    $(".dropdown_sub").not(innerNav).slideUp();
+    $(".dropdown_button").removeClass("active");
+    $(innerBtn).toggleClass("active");
+  });
 });

@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>School|| Portfolio</title>
         <!-- link shortcut -->
-        <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/image/logo2.svg" type="image/x-icon">
         <!-- bootstarp link -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- font awesome -->
@@ -176,13 +176,196 @@
                             </ul>
                         </nav>
                         <!-- toggler -->
-                        <div class="toggle_nav d-lg-none" id="toggle_nav">
+                        <div class="toggle_nav d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#toggle_nav">
                             <ul>
                                 <li></li>
                                 <li></li>
                                 <li></li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile nav -->
+            <div class="offcanvas offcanvas-start" id="toggle_nav">
+                <!-- offcanvas header -->
+                <div class="offcanvas-header">
+                    <div class="nav_logo">
+                        <a href="./index.html">
+                            <img src="assets/image/logo2.svg" alt="">
+                        </a>
+                    </div>
+                    <button type="button btn" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <!-- offcanvas body -->
+                <div class="offcanvas-body">
+                    <div class="mobile_nav">
+                        <ul>
+                            <!-- item -->
+                            <li>
+                                <a href="./index.html">
+                                    <p class="d-flex gap-2">
+                                        <span>হোম</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a class="dropdown_button">
+                                    <p class="d-flex gap-2">
+                                        <span>আমাদের সম্পর্কে</span>
+                                    </p>
+                                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                                </a>
+                                <!-- mobile sub nav -->
+                                <div class="mobile_suv_nav dropdown_sub">
+                                    <ul>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./aboutus.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">প্রতিষ্ঠান সম্পর্কে</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./aboutus.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">আমাদের লক্ষ্য</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./aboutus.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">আমাদের ভিশন</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a class="dropdown_button">
+                                    <p class="d-flex gap-2">
+                                        <span>একাডেমী</span>
+                                    </p>
+                                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                                </a>
+                                <!-- mobile sub nav -->
+                                <div class="mobile_suv_nav dropdown_sub">
+                                    <ul>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./rules.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">নিয়ম এবং প্রবিধান</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./teachers.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">শিক্ষকদের তথ্য</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./classrutine.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">ক্লাস রুটিন</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a class="dropdown_button">
+                                    <p class="d-flex gap-2">
+                                        <span>প্রশাসনিক ব্যাবস্থাপক</span>
+                                    </p>
+                                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                                </a>
+                                <!-- mobile sub nav -->
+                                <div class="mobile_suv_nav dropdown_sub">
+                                    <ul>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./career.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">ক্যারিয়ার</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./advisor.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">আমাদের উপদেষ্টা</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./managing.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">ম্যানেজিং বোর্ড</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a class="dropdown_button">
+                                    <p class="d-flex gap-2">
+                                        <span>রেজাল্ট</span>
+                                    </p>
+                                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                                </a>
+                                <!-- mobile sub nav -->
+                                <div class="mobile_suv_nav dropdown_sub">
+                                    <ul>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./boardresult.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">বোর্ড রেজাল্ট</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <!-- Sub Nav list -->
+                                        <li>
+                                            <a href="./result.html">
+                                                <p class="d-flex gap-2">
+                                                    <span class="subnav_text">একাডেমিক পরীক্ষার রেজাল্ট</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a href="./event.html">
+                                    <p class="d-flex gap-2">
+                                        <span>ইভেন্টস</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a class="main_btn btn_collapse btn_hover text-white justify-content-center" href="./contactus.html" tabindex="0">যোগাযোগ</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
