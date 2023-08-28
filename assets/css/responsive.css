@@ -39,6 +39,10 @@
         padding: 20px;
     }
 
+    .gallery_page_image {
+        width: calc(50% - 8px);
+    }
+
 }
 
 /* 768 */
@@ -81,6 +85,10 @@
 
     .board_result_content{
         padding: 20px 30px;
+    }
+
+    .gallery_page_image {
+        width: calc(33.33% - 11px);
     }
     
 }
@@ -146,6 +154,11 @@
     }
     .teacher_card {
         width: calc(20% - 13px);
+    }
+
+    .gallery_page_image {
+        height: 300px;
+        width: calc(25% - 12px);
     }
    
 }
